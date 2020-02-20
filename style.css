@@ -12,9 +12,19 @@ File list:
 * timeline.css
 * tracks.css
 *****************************/
-style{
+
+style {
     display: none !important;
 }
+
+script {
+    display: none !important;
+}
+
+link {
+    display: none !important;
+}
+
 #devfolio-apply-now {
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -32,7 +42,7 @@ style{
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
-    width:15em;
+    width: 15em;
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -77,6 +87,7 @@ a {
     min-height: 80vh;
     background-color: #CDEDF6
 }
+
 .about-usmech .content {
     display: inline-block!important;
     padding-left: 5%;
@@ -88,7 +99,7 @@ a {
 }
 
 .about-usmech .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -118,7 +129,7 @@ a {
 }
 
 .about-us .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -130,8 +141,6 @@ a {
     padding-top: 20px;
     font-size: 120%
 }
-
-
 
 @media screen and (max-width:1000px) {
     .about-us .content {
@@ -157,7 +166,7 @@ a {
         display: block;
         z-index: -15;
         width: 90%;
-        padding-left: 10% ;
+        padding-left: 10%;
         height: auto
     }
 }
@@ -183,7 +192,7 @@ a {
 }
 
 .faqmech .title {
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
     color: var(--title-col);
@@ -212,19 +221,16 @@ a {
 }
 
 .faqmech .add {
-    width:100%;
+    width: 100%;
     text-align: left;
     border: none;
     background: none;
-    padding:12px;
+    padding: 12px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-
 
 .faqmech .a {
     display: none
@@ -244,8 +250,6 @@ a {
     transition: all 4s ease-in
 }
 
-
-
 @media screen and (max-width:870px) {
     .faqmech .qas {
         width: 95vw
@@ -257,7 +261,6 @@ a {
     --text-col: #1a281f;
     --btn-col: #fe654f
 }
-
 
 .faq {
     --title-col: #484e4a;
@@ -280,7 +283,7 @@ a {
 }
 
 .faq .title {
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
     color: var(--title-col);
@@ -309,17 +312,16 @@ a {
 }
 
 .faq .add {
-    width:100%;
+    width: 100%;
     text-align: left;
     border: none;
     background: none;
-    padding:12px;
+    padding: 12px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .hidden {
     display: none
@@ -422,12 +424,11 @@ a {
     -moz-appearance: none;
     background-color: transparent;
     color: var(--btn-col);
-    }
+}
 
 .dir-btn:hover {
     background-color: var(--btn-col);
     color: whitesmoke;
-
     text-decoration: none;
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s
 }
@@ -449,7 +450,7 @@ a {
 }
 
 .reach-us .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -498,7 +499,7 @@ a {
 }
 
 .contact-us .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -555,9 +556,10 @@ a {
     color: var(--title-col)
 }
 
-a.name{
-    color:var(--col3) !important;
+a.name {
+    color: var(--col3) !important;
 }
+
 .contact-us .contact-g {
     display: inline-block;
     width: 250px;
@@ -585,10 +587,11 @@ a.name{
     padding-top: 3em;
 }
 
-.us a{
+.us a {
     text-align: center;
     font-size: 70%;
 }
+
 .us img {
     display: inline
 }
@@ -780,7 +783,7 @@ img.lp-g {
 .date-item {
     text-align: center;
     display: inline-block;
-    width:8rem;
+    width: 8rem;
     text-align: left;
     padding: 5px;
     border-radius: 10px;
@@ -788,9 +791,11 @@ img.lp-g {
     color: var(--col3);
     font-weight: 600;
 }
-.date-item span{
+
+.date-item span {
     display: inline-block;
 }
+
 .date span.th {
     display: inline;
     font-size: 60%;
@@ -799,7 +804,6 @@ img.lp-g {
 }
 
 .date-item .date {
-
     font-size: 180%;
     font-weight: 700
 }
@@ -901,15 +905,16 @@ title {
 }
 
 .sponsor .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
     font-weight: 700;
     letter-spacing: 2px
 }
-.sponsor .sub-title{
-    margin-top:1em;
+
+.sponsor .sub-title {
+    margin-top: 1em;
     text-align: center;
     opacity: 0.69;
     color: var(--title-col);
@@ -932,15 +937,16 @@ title {
 }
 
 .sponsormech .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
     font-weight: 700;
     letter-spacing: 2px
 }
-.sponsormech .sub-title{
-    margin-top:1em;
+
+.sponsormech .sub-title {
+    margin-top: 1em;
     text-align: center;
     opacity: 0.69;
     color: var(--title-col);
@@ -972,7 +978,7 @@ title {
 
 .sponsors-logo .sponsor img {
     height: 100px;
-    max-width:100%;
+    max-width: 100%;
 }
 
 .sponsor-btn {
@@ -995,7 +1001,6 @@ title {
 }
 
 .sponsor-btn:hover {
-
     background-color: var(--btn-col);
     color: whitesmoke!important;
     text-decoration: none;
@@ -1003,7 +1008,7 @@ title {
 }
 
 .sponsor-btn a {
-    color:var(--btn-col);
+    color: var(--btn-col);
     text-decoration: none
 }
 
@@ -1037,6 +1042,7 @@ title {
 /*
     Timeline (Schedule)
 */
+
 .timeline {
     --title-col: #484e4a;
     --text-col: #1a281f;
@@ -1053,7 +1059,7 @@ title {
 }
 
 .timeline .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -1161,7 +1167,7 @@ title {
 }
 
 .timelinemech .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -1253,7 +1259,6 @@ title {
     color: var(--text-col)
 }
 
-
 .hidden {
     display: none
 }
@@ -1300,7 +1305,7 @@ title {
 }
 
 .tracks .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
@@ -1383,8 +1388,8 @@ title {
     display: inline-block;
     width: 40vw
 }
-.tracksgrmech {
 
+.tracksgrmech {
     position: relative;
     top: 2vw;
     display: inline-block;
@@ -1413,6 +1418,7 @@ title {
         justify-content: center
     }
 }
+
 .tracksmech {
     background-image: url('./images/track-bgmech.svg');
     background-size: 100% auto;
@@ -1430,7 +1436,7 @@ title {
 }
 
 .tracksmech .title {
-    margin-top:1em;
+    margin-top: 1em;
     text-align: center;
     color: var(--title-col);
     font-size: 300%;
