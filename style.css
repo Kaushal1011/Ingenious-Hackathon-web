@@ -426,7 +426,7 @@ a {
 }
 
 .contact-ele .details .name {
-    font-size: 126%;
+    font-size: 100%;
     font-weight: 600;
     color: var(--title-col)
 }
