@@ -13,6 +13,25 @@ File list:
 * tracks.css
 *****************************/
 
+* {
+    --title-col: #484e4a;
+    --text-col: #1a281f;
+    --btn-col: #fe654f;
+    --col3: #3b137a;
+    --card-col: #cbe1ff;
+    --card-col-mech: #;
+    --bg-col: #f5f5f5;
+    --bg-about-us: #ff6661;
+    --bg-contact-us: #dcc5f1;
+    --bg-about-us-mech: #CDEDF6;
+    --bg-sponsor: #d6ece1;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
 }
@@ -75,44 +94,10 @@ a {
 }
 
 .about-us {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
     display: flex;
     flex-direction: row-reverse;
     min-height: 80vh;
-    background-color: #ff6661
-}
-
-.about-usmech {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    display: flex;
-    flex-direction: row-reverse;
-    min-height: 80vh;
-    background-color: #CDEDF6
-}
-
-.about-usmech .content {
-    display: inline-block!important;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 60%;
-    color: var(--text-col);
-    display: inline-block;
-    align-self: center;
-}
-
-.about-usmech .title {
-    text-align: center;
-    color: var(--title-col);
-    font-size: 300%;
-    font-weight: 700;
-    letter-spacing: 2px
-}
-
-.about-usmech .text {
-    padding-top: 20px;
-    font-size: 120%
+    background-color: var(--bg-about-us);
 }
 
 .about-us-g {
@@ -135,14 +120,14 @@ a {
     padding-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px
 }
 
 .about-us .text {
     padding-top: 20px;
-    font-size: 120%
+    font-size: 126%;
 }
 
 @media screen and (max-width:1100px) {
@@ -150,18 +135,10 @@ a {
         width: 90%;
         padding-left: 5%
     }
-    .about-usmech .content {
-        width: 90%;
-        padding-left: 5%
-    }
 }
 
 @media screen and (max-width:1100px) {
     .about-us {
-        display: block;
-        padding-top: 3em;
-    }
-    .about-usmech {
         display: block;
         padding-top: 3em;
     }
@@ -174,101 +151,7 @@ a {
     }
 }
 
-.faqmech {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
-    background-image: url('./images/faq-bgmech.svg');
-    background-position: top left;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 3vh
-}
-
-.faqmech .content {
-    display: flex;
-    color: var(--text-col);
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.faqmech .title {
-    padding-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    color: var(--title-col);
-    font-size: 300%;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.faqmech .q {
-    display: inline;
-    color: #000;
-    font-size: 110%
-}
-
-.faqmech .a {
-    color: var(--title-col)
-}
-
-.faqmech .qas {
-    width: 50%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center
-}
-
-.faqmech .add {
-    width: 100%;
-    text-align: left;
-    border: none;
-    background: none;
-    padding: 12px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.faqmech .a {
-    display: none
-}
-
-.faqmech .qa {
-    height: 0
-}
-
-.faqmech .a.active {
-    height: auto;
-    display: block;
-    transition: height .7s ease-in
-}
-
-.faqmech .active {
-    transition: all 4s ease-in
-}
-
-@media screen and (max-width:870px) {
-    .faqmech .qas {
-        width: 95vw
-    }
-}
-
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f
-}
-
 .faq {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
     background-image: url('./images/faq-bg.svg');
     background-position: top left;
     background-size: 100% auto;
@@ -291,15 +174,14 @@ a {
     margin-bottom: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .faq .q {
     display: inline;
-    color: #000;
-    font-size: 110%
+    font-size: 130%;
 }
 
 .faq .a {
@@ -360,12 +242,6 @@ a {
     .faq .qas {
         width: 95vw
     }
-}
-
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
 }
 
 .mapouter .gmap_canvas {
@@ -442,14 +318,14 @@ a {
 }
 
 .venue {
-    font-size: 120%;
+    font-size: 126%;
     padding-top: 2em;
     text-align: center;
     justify-self: flex-start
 }
 
 .venue h3 {
-    font-size: 180%;
+    font-size: 189%;
     color: var(--title-col)
 }
 
@@ -457,7 +333,7 @@ a {
     padding-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px;
     padding-bottom: 1em
@@ -496,24 +372,18 @@ a {
     }
 }
 
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f
-}
-
 .contact-us .title {
     padding-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px;
     padding-top: 1.5em
 }
 
 .contact-us {
-    background-color: #dcc5f1;
+    background-color: var(--bg-contact-us);
 }
 
 @media screen and (max-width:768px) {
@@ -551,11 +421,11 @@ a {
 .contact-ele .details {
     display: inline-block;
     padding-left: 2em;
-    width: 100%
+    width: 95%
 }
 
 .contact-ele .details .name {
-    font-size: 120%;
+    font-size: 126%;
     font-weight: 600;
     color: var(--title-col)
 }
@@ -586,14 +456,9 @@ a.name {
 }
 
 .us {
+    display: block;
     text-align: center;
-    font-size: 70%;
     padding-top: 3em;
-}
-
-.us a {
-    text-align: center;
-    font-size: 70%;
 }
 
 .us img {
@@ -601,9 +466,9 @@ a.name {
 }
 
 footer {
-    font-size: 70%;
+    font-size: 85%;
     text-align: center;
-    background-color: #dcc5f1;
+    background-color: var(--bg-contact-us);
     color: var(--title-col);
     padding-bottom: 2em;
     text-transform: uppercase
@@ -623,11 +488,6 @@ footer a:hover {
     word-wrap: break-word
 }
 
-* {
-    --col1: #fe654f;
-    --bg-col: #f5f5f5;
-}
-
 .menu {
     display: flex;
     justify-content: center;
@@ -640,7 +500,7 @@ footer a:hover {
     border-radius: 50%;
     color: var(--bg-col);
     border: 2px solid rgba(245, 245, 245, 0.719);
-    background-color: #ff6661;
+    background-color: var(--btn-col);
     font-size: 36px;
     top: -15px;
     left: -15px
@@ -660,7 +520,7 @@ footer a:hover {
     padding: 0;
     margin: 0;
     transition: height ease-out 1s;
-    background-color: #ff6661;
+    background-color: var(--bg-about-us);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -710,42 +570,8 @@ footer a:hover {
     width: 100wv
 }
 
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #ff6661;
-    --col3: #3b137a;
-    --bg-col: #f5f5f5;
-}
-
-.landing-pagemech {
-    height: 100vh;
-    width: 100wv
-}
-
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
-    --col3: #3b137a;
-    --bg-col: #f5f5f5;
-}
-
 .landing-page {
     background-image: url('./images/landing-bg.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom -30px right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 100vh
-}
-
-.landing-pagemech {
-    background-image: url('./images/landing-bgmech.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom -30px right;
@@ -772,7 +598,7 @@ img.lp-g {
 .date-item {
     text-align: center;
     display: inline-block;
-    width: 8rem;
+    width: 9rem;
     text-align: left;
     padding: 5px;
     border-radius: 10px;
@@ -787,13 +613,13 @@ img.lp-g {
 
 .date span.th {
     display: inline;
-    font-size: 60%;
+    font-size: 66%;
     font-weight: 600;
     vertical-align: super
 }
 
 .date-item .date {
-    font-size: 180%;
+    font-size: 189%;
     font-weight: 700
 }
 
@@ -801,13 +627,13 @@ img.lp-g {
     margin: 0;
     overflow: visible;
     color: var(--col3)!important;
-    font-size: 400%;
+    font-size: 420%;
     font-weight: 700
 }
 
 .banner-info {
     color: var(--text-col);
-    font-size: 120%
+    font-size: 126%
 }
 
 .counter-item {
@@ -881,10 +707,7 @@ title {
 }
 
 .sponsor {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
-    background-color: #d6ece1
+    background-color: var(--bg-sponsor);
 }
 
 .sponsor .content {
@@ -897,7 +720,7 @@ title {
     margin-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px
 }
@@ -907,39 +730,7 @@ title {
     text-align: center;
     opacity: 0.69;
     color: var(--title-col);
-    font-size: 200%;
-    font-weight: 700;
-    letter-spacing: 2px
-}
-
-.sponsormech {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
-    background-color: #7DDF64
-}
-
-.sponsormech .content {
-    padding-top: 2%;
-    color: var(--text-col);
-    display: block
-}
-
-.sponsormech .title {
-    margin-top: 1em;
-    text-align: center;
-    color: var(--title-col);
-    font-size: 300%;
-    font-weight: 700;
-    letter-spacing: 2px
-}
-
-.sponsormech .sub-title {
-    margin-top: 1em;
-    text-align: center;
-    opacity: 0.69;
-    color: var(--title-col);
-    font-size: 200%;
+    font-size: 210%;
     font-weight: 700;
     letter-spacing: 2px
 }
@@ -1019,7 +810,7 @@ title {
 
 .b-strip-text span {
     text-transform: uppercase;
-    font-size: 120%
+    font-size: 126%
 }
 
 .brochure-strip {
@@ -1033,9 +824,6 @@ title {
 */
 
 .timeline {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
     background-image: url('./images/schedule-bg.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -1051,7 +839,7 @@ title {
     margin-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px
 }
@@ -1136,115 +924,7 @@ title {
 }
 
 .timeline .schedule-list .list-element .text {
-    font-size: 120%;
-    color: var(--text-col)
-}
-
-.timelinemech {
-    --title-col: #484e4a;
-    --text-col: #1a281f;
-    --btn-col: #fe654f;
-    background-image: url('./images/schedulemech-bg.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom -150px left
-}
-
-.timelinemech .content {
-    color: var(--text-col);
-    display: block
-}
-
-.timelinemech .title {
-    margin-top: 1em;
-    text-align: center;
-    color: var(--title-col);
-    font-size: 300%;
-    font-weight: 700;
-    letter-spacing: 2px
-}
-
-.timelinemech .date-links {
-    position: relative;
-    left: (50% - 500px);
-    display: flex;
-    justify-content: center
-}
-
-.timelinemech .date-links button {
-    display: inline-block;
-    border: 0;
-    border-radius: 10px;
-    border: 2px solid var(--btn-col);
-    padding: 1rem 1rem;
-    width: 200px;
-    margin: 10px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: var(--btn-col);
-    color: whitesmoke
-}
-
-.timelinemech .date-links button sup {
-    display: inline
-}
-
-.timelinemech .schedule-list {
-    padding-top: 5em;
-}
-
-.timelinemech .schedule-list .list-element.left {
-    overflow: visible;
-    text-align: right
-}
-
-.timelinemech .schedule-list .list-element.left::after {
-    position: absolute;
-    top: 0;
-    right: -4px;
-    width: 5px;
-    height: 120%;
-    content: '';
-    background-color: #d4d1d1
-}
-
-.timelinemech .schedule-list .list-element.right {
-    overflow: visible;
-    text-align: left
-}
-
-.timelinemech .schedule-list .list-element.right:hover::before {
-    background-color: var(--btn-col);
-    transition: all .3s ease-in
-}
-
-.timelinemech .schedule-list .list-element.left:hover::after {
-    background-color: var(--btn-col);
-    transition: all .3s ease-in
-}
-
-.timelinemech .schedule-list .list-element.right::before {
-    position: absolute;
-    top: 0;
-    left: -1px;
-    width: 5px;
-    height: 120%;
-    content: '';
-    background-color: #d4d1d1
-}
-
-.timelinemech .schedule-list .list-element .time {
-    color: var(--btn-col)
-}
-
-.timelinemech .schedule-list .list-element .text {
-    font-size: 120%;
+    font-size: 126%;
     color: var(--text-col)
 }
 
@@ -1271,11 +951,6 @@ title {
     }
 }
 
-* {
-    --title-col: #484e4a;
-    --text-col: #1a281f
-}
-
 .tracks {
     background-image: url('./images/track-bg.svg');
     background-size: 100% auto;
@@ -1296,14 +971,14 @@ title {
     padding-top: 1em;
     text-align: center;
     color: var(--title-col);
-    font-size: 300%;
+    font-size: 315%;
     font-weight: 700;
     letter-spacing: 2px
 }
 
 .tracks .text {
     padding-top: 20px;
-    font-size: 100%
+    font-size: 105%
 }
 
 .tracks .cards {
@@ -1321,7 +996,7 @@ title {
     margin-top: 10%;
     padding-bottom: 4%;
     border-radius: 10px;
-    background-color: #cbe1ff
+    background-color: var(--card-col);
 }
 
 .tracks .card .img {
@@ -1331,7 +1006,7 @@ title {
 
 .tracks .card .title {
     margin: 10px;
-    font-size: 150%;
+    font-size: 158%;
     letter-spacing: 0;
     text-align: center
 }
@@ -1339,7 +1014,7 @@ title {
 .tracks .card .text {
     position: relative;
     margin: 0;
-    font-size: 100%;
+    font-size: 105%;
     width: 90%;
     left: 7%
 }
@@ -1357,12 +1032,6 @@ title {
     justify-content: space-between
 }
 
-.tracks-gmech {
-    overflow: visible;
-    display: flex;
-    justify-content: center
-}
-
 .tracksgl {
     padding-left: 2vw;
     display: inline-block;
@@ -1371,13 +1040,6 @@ title {
 
 .tracksgr {
     padding-right: 2vw;
-    position: relative;
-    top: 2vw;
-    display: inline-block;
-    width: 40vw
-}
-
-.tracksgrmech {
     position: relative;
     top: 2vw;
     display: inline-block;
@@ -1400,84 +1062,24 @@ title {
         display: inline-block;
         width: 70vw
     }
-    .tracks-gmech {
-        overflow: visible;
-        display: flex;
-        justify-content: center
-    }
 }
 
-.tracksmech {
-    background-image: url('./images/track-bgmech.svg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top -5vh left, bottom right;
-    height: auto;
-    overflow: visible
+/*
+    Mechathon stuff
+*/
+
+.landing-page.mech {
+    background-image: url(./images/landing-bgmech.svg);
 }
 
-.tracksmech .content {
-    margin-left: 0;
-    width: 100%;
-    color: var(--text-col);
-    display: block
+.about-us.mech {
+    background-color: var(--bg-about-us-mech);
 }
 
-.tracksmech .title {
-    padding-top: 1em;
-    text-align: center;
-    color: var(--title-col);
-    font-size: 300%;
-    font-weight: 700;
-    letter-spacing: 2px
+.tracks.mech {
+    background-image: url(./images/track-bgmech.svg);
 }
 
-.tracksmech .text {
-    padding-top: 20px;
-    font-size: 100%
-}
-
-.tracksmech .cards {
-    display: flex;
-    padding-top: 5vh;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly
-}
-
-.tracksmech .card {
-    max-width: 24em;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 10%;
-    padding-bottom: 4%;
-    border-radius: 10px;
-    background-color: #E8615E;
-}
-
-.tracksmech .card .img {
-    border-radius: 5px;
-    width: 100%
-}
-
-.tracksmech .card .title {
-    margin: 10px;
-    font-size: 150%;
-    letter-spacing: 0;
-    text-align: center
-}
-
-.tracksmech .card .text {
-    position: relative;
-    margin: 0;
-    font-size: 100%;
-    width: 90%;
-    left: 7%
-}
-
-@media screen and (min-width:1600px) {
-    .tracksmech .card {
-        margin-left: 6em;
-        margin-right: 6em
-    }
+.tracks.mech .card {
+    background-color: var(--card-col-mech);
 }
