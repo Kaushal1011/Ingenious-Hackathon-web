@@ -1121,3 +1121,37 @@ title {
     color: white;
     text-decoration: none;
 }
+
+.prizes {
+    background-color: white;
+}
+
+.prizes .title {
+    padding-top: 1em;
+    text-align: center;
+    color: var(--title-col);
+    font-size: 315%;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+
+.prizes .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.prizes .content .prize-card {
+    padding: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.prizes .content .amount {
+    font-size: 250%;
+    color: var(--bg-about-us);
+    font-weight: 600;
+}
