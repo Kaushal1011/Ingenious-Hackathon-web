@@ -1119,7 +1119,11 @@ title {
 }
 
 .prizes {
-    background-color: white;
+    background: url('./images/winner.png'), url('./images/winner2.png'), white;
+    background-blend-mode: luminosity;
+    background-position: bottom right, top left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .prizes .title {

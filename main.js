@@ -8,7 +8,7 @@ setInterval(() => {
     m = document.getElementById('mins');
     s = document.getElementById('secs');
     d.innerHTML = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    h.innerHTML = Math.floor((timeleft / (1000 * 60 * 60)) % 60);
+    h.innerHTML = Math.floor((timeleft / (1000 * 60 * 60)) % 24);
     m.innerHTML = Math.floor((timeleft / (1000 * 60)) % 60);
     s.innerHTML = Math.floor((timeleft / (1000)) % 60);
 }, 1000);
