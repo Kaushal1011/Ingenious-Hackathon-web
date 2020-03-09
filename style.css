@@ -707,17 +707,17 @@ title {
     display: none!important
 }
 
-.sponsor {
+.sponsor-sec {
     background-color: var(--bg-sponsor);
 }
 
-.sponsor .content {
+.sponsor-sec .content {
     padding-top: 2%;
     color: var(--text-col);
     display: block
 }
 
-.sponsor .title {
+.sponsor-sec .title {
     margin-top: 1em;
     text-align: center;
     color: var(--title-col);
@@ -726,7 +726,7 @@ title {
     letter-spacing: 2px
 }
 
-.sponsor .sub-title {
+.sponsor-sec .sub-title {
     margin-top: 1em;
     text-align: center;
     opacity: 0.69;
@@ -939,12 +939,17 @@ title {
     color: var(--btn-col)!important
 }
 
-@media screen and (min-width:1300px) {
+.timeline-g-block.mech {
+    display: inline-block;
+    height: auto;
+}
+
+@media screen and (min-width:700px) {
     .timeline-g-block {
         padding-left: 5vw;
-        display: inline-flex;
+        display: flex;
         position: relative;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .timeline-g-block.mech {
         display: flex;
@@ -1093,7 +1098,7 @@ title {
     background-image: url(./images/schedulemech-bg.svg);
 }
 
-.sponsor.mech {
+.sponsor-sec.mech {
     background-color: var(--bg-sponsor-mech);
 }
 
